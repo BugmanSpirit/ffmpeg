@@ -55,7 +55,7 @@ BuildRequires:  dav1d-dev
 BuildRequires:  Vulkan-Loader-dev Vulkan-Loader 
 BuildRequires:  Vulkan-Headers-dev Vulkan-Tools Vulkan-Headers
 BuildRequires:  SPIRV-Tools-dev SPIRV-Cross-dev SPIRV-Headers-dev
-# BuildRequires:  libplacebo-dev
+BuildRequires:  libplacebo-dev
 BuildRequires:  SVT-AV1-dev
 BuildRequires:  zimg-dev
 BuildRequires:  xvidcore-dev
@@ -186,9 +186,9 @@ export CXXFLAGS="$CXXFLAGS -Ofast -fno-lto -falign-functions=32 -fno-semantic-in
     --enable-libxcb \
     --enable-libzimg \
     --enable-vulkan \
-    --enable-libshaderc
+    --enable-libshaderc \
+    --enable-libplacebo 
     # --enable-libglslang
-    # --enable-libplacebo 
     
 make  %{?_smp_mflags}
 
