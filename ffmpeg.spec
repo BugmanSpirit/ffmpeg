@@ -185,11 +185,10 @@ export CXXFLAGS="$CXXFLAGS -Ofast -fno-lto -falign-functions=32 -fno-semantic-in
     --enable-libvidstab \
     --enable-libxcb \
     --enable-libzimg
-    
-    # --enable-libplacebo 
     --enable-vulkan
     --enable-libglslang
     --enable-libshaderc
+    # --enable-libplacebo 
     
 make  %{?_smp_mflags}
 
