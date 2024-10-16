@@ -184,9 +184,9 @@ export CXXFLAGS="$CXXFLAGS -Ofast -fno-lto -falign-functions=32 -fno-semantic-in
     --enable-libtheora \
     --enable-libvidstab \
     --enable-libxcb \
-    --enable-libzimg
-    --enable-vulkan
-    --enable-libglslang
+    --enable-libzimg \
+    --enable-vulkan \
+    --enable-libglslang \
     --enable-libshaderc
     # --enable-libplacebo 
     
